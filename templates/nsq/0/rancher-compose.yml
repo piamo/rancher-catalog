@@ -17,7 +17,7 @@ catalog:
       type: "int"
     - variable: "NSQD_MEM_QUEUE_SIZE"
       description: "Capacity of NSQD memory queue."
-      label: "Nsqd Nodes"
+      label: "Nsqd Mem Queue Size"
       required: true
       default: "1"
       type: "int"
