@@ -1,0 +1,7 @@
+name: NSQ
+description: |
+  unofficial nsq composing template
+version: v1.1.0
+category: Message queues
+maintainer: "pigghost <huangpan@sensetime.com|hpan2008go@gmail.com>"
+projectURL: https://github.com/pigghost/rancher-catalog
