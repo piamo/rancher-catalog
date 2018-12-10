@@ -21,7 +21,7 @@ services:
     command:
     - /bin/sh
     - -c
-    - nsqd -data-path=/data -lookupd-tcp-address=nsqlookupd01:4160 -lookupd-tcp-address=nsqlookupd02:4160 -broadcast-address=$${HOSTNAME} -mem-queue-size=${NSQD_MEM_QUEUE_SIZE}
+    - nsqd -data-path=/data -lookupd-tcp-address=nsqlookupd01:4160 -lookupd-tcp-address=nsqlookupd02:4160 -broadcast-address=$${HOSTNAME} -mem-queue-size=$${MEM_QUEUE_SIZE:-$NSQD_DEFAULT_QUEUE_SIZE}
     labels:
       io.rancher.scheduler.affinity:host_label_soft: nsqd=true
       io.rancher.scheduler.affinity:container_label_soft_ne: io.rancher.stack_service.name=$${stack_name}/$${service_name}

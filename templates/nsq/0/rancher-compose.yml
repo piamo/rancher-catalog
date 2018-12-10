@@ -15,11 +15,11 @@ catalog:
       required: true
       default: "1"
       type: "int"
-    - variable: "NSQD_MEM_QUEUE_SIZE"
-      description: "Capacity of NSQD memory queue."
-      label: "Nsqd Mem Queue Size"
+    - variable: "NSQD_DEFAULT_QUEUE_SIZE"
+      description: "Deafault NSQD memory queue size."
+      label: "Nsqd Config"
       required: true
-      default: "1"
+      default: "100"
       type: "int"
 services:
   nsqlookupd01:
