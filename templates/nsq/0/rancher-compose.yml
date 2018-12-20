@@ -16,8 +16,8 @@ catalog:
       default: "1"
       type: "int"
     - variable: "NSQD_DEFAULT_QUEUE_SIZE"
-      description: "Deafault NSQD memory queue size."
-      label: "Nsqd Config"
+      description: "Max Size of NSQD Memory Queue."
+      label: "Memory Queue Capacity"
       required: true
       default: "100"
       type: "int"
