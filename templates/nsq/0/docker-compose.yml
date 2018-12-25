@@ -18,8 +18,8 @@ services:
 
   nsqd:
     image: nsqio/nsq:v1.1.0
-    mem_limit: 1048576000
-    mem_reservation: 104857600
+    #mem_limit: 1048576000
+    #mem_reservation: 104857600
     command:
     - /bin/sh
     - -c
